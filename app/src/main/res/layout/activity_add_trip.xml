@@ -1,0 +1,45 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <EditText
+    android:id="@+id/tripTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    android:hint="@string/trip_title_hint"
+    android:importantForAutofill="no"
+    android:inputType="textCapSentences" />
+
+  <EditText
+    android:id="@+id/tripDescription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    android:hint="@string/trip_description_hint"
+    android:importantForAutofill="no"
+    android:inputType="textMultiLine"
+    android:maxLength="240" />
+
+  <EditText
+    android:id="@+id/destinationCountry"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    android:hint="@string/trip_country_hint"
+    android:importantForAutofill="no"
+    android:inputType="textCapWords"
+    android:lines="1"
+    android:maxLines="1" />
+
+  <Button
+    android:id="@+id/addTrip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    android:background="@color/colorPrimary"
+    android:text="@string/add_trip_button_text"
+    android:textColor="@color/white" />
+</LinearLayout>
